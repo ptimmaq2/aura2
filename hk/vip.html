@@ -1,0 +1,40 @@
+ <link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/global.css" type="text/css">
+ <div id="main">
+   <div id="links"></div>     <div id="header"><img src="{url}/app/tpl/skins/{skin}/images/logo.gif" align=left style="margin-left: 30px; margin-top: 5px;"><div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the color of the logo text -->
+         <h1>{hotelname} Housekeeping -- Welcome {username}</h1>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- insert your sidebar items here -->
+ 	<?php include "templates/sidebar.php"; ?> <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content_container">
+
+        <div id="content">
+          <!-- insert the page content here -->
+          <br /> 
+                    <?php    if(isset($_POST['give']))
+    {    
+        if(mysql_num_rows(mysql_query("SELECT * FROM users WHERE username = '" . filter($_POST['username']) . "'")) == 0){ echo "User does not exist."; }
+        else {
+        mysql_query("UPDATE users SET rank = 2, credits = credits + '20000', activity_points = activity_points + '20000', vip = '1' WHERE username = '" . filter($_POST['username']) . "'");
+        }
+    }
+    
+?>
+				<form method="post">
+				Username <br /> <input type="text" name="username" /> <br /> <br />
+				<input type="submit" value="  Give Regular VIP  " name="give"/>
+				</form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+   <font color="black">   <center>Powered by GrapeASE by Grapefruit - Design by Grapefruit</center><br />  <center>Implemented into RevCMS by Kryptos</center>

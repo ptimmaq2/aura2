@@ -1,0 +1,51 @@
+ <link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/global.css" type="text/css">
+ <div id="main">
+   <div id="links"></div>     <div id="header"><img src="{url}/app/tpl/skins/{skin}/images/logo.gif" align=left style="margin-left: 30px; margin-top: 5px;"><div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the color of the logo text -->
+         <h1>{hotelname} Housekeeping -- Welcome {username}</h1>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- insert your sidebar items here -->
+ 	<?php include "templates/sidebar.php"; ?> <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content_container">
+
+        <div id="content">
+          <!-- insert the page content here -->
+          <br />          
+
+          <table width="100%">
+<tr><td><b>User ID</b></td><td><b>Badge ID</b></td><td><b>Badge Slot</b></td></tr>
+<?php                                // Make a MySQL Connection
+                                $query = "SELECT * FROM user_badges ORDER by user_id DESC"; 
+     
+                                $result = mysql_query($query) or die(mysql_error());
+
+
+
+
+                                while($row = mysql_fetch_array($result))
+                                {
+                                echo("<tr>");
+                                echo("<td>" . $row['user_id'] . "</td>");
+                                echo("<td>" . $row['badge_id'] . "</a></td>");
+								echo("<td>" . $row['badge_slot'] . "</td>");
+								
+								
+                                
+                                
+                                }
+                                ?>
+
+</table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+   <font color="black">   <center>Powered by GrapeASE by Grapefruit - Design by Grapefruit</center><br />  <center>Implemented into RevCMS by Kryptos</center><br />

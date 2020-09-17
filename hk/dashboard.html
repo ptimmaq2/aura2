@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/global.css" type="text/css">
+ <div id="main">
+    <div id="links"></div>
+    <div id="header"><img src="{url}/app/tpl/skins/{skin}/images/logo.gif" align=left style="margin-left: 30px; margin-top: 5px;">
+    
+	 <div id="logo">
+        <div id="logo_text align=center">
+          <!-- class="logo_colour", allows you to change the color of the logo text -->
+          <h1>{hotelname} Housekeeping -- Welcome {username}</h1>
+        </div>
+      </div>
+    </div>
+  
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- insert your sidebar items here -->
+	<?php include "templates/sidebar.php"; ?>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content_container">
+
+        <div id="content">
+          <!-- insert the page content here -->
+          <br />          
+
+          <?php
+
+echo "<center>Please choose an option from the menu to the left.</center>";
+
+?>
+<br />
+<center><b><h2>Hotel Statistics</h2></b>
+
+ Users online: <?php $sql = "SELECT COUNT(*) FROM users WHERE online = '1'"; 
+$query = mysql_query($sql) or die(mysql_error()); 
+$hoeveel = mysql_result($query,0,0); 
+
+echo $hoeveel;  ?> <br> 
+Registered Users:
+<?php 
+$query = mysql_query("SELECT COUNT(*) AS aantalleden FROM users") or die(mysql_error()); 
+$data = mysql_fetch_assoc($query); 
+
+echo $data['aantalleden']; 
+?>
+<br />Rooms:
+<?php 
+$query = mysql_query("SELECT COUNT(*) AS aantalkamers FROM rooms") or die(mysql_error()); 
+$data = mysql_fetch_assoc($query); 
+
+echo $data['aantalkamers']; 
+?>
+<br />Badges:
+<?php 
+$query = mysql_query("SELECT COUNT(*) AS aantalbadges FROM user_badges") or die(mysql_error()); 
+$data = mysql_fetch_assoc($query); 
+
+echo $data['aantalbadges']; 
+?>
+<br />Favorite rooms:
+<?php 
+$query = mysql_query("SELECT COUNT(*) AS aantalfavouritekamers FROM user_favorites") or die(mysql_error()); 
+$data = mysql_fetch_assoc($query); 
+
+echo $data['aantalfavouritekamers']; 
+?>
+<br />Furniture:
+<?php 
+$query = mysql_query("SELECT COUNT(*) AS aantalmeubels FROM items_base") or die(mysql_error()); 
+$data = mysql_fetch_assoc($query); 
+
+echo $data['aantalmeubels']; 
+?>
+<br />Furniture in the catalog:
+<?php 
+$query = mysql_query("SELECT COUNT(*) AS aantalmeubels FROM catalog_items_copy") or die(mysql_error()); 
+$data = mysql_fetch_assoc($query); 
+
+echo $data['aantalmeubels']; 
+?>
+</center>
+        </div>
+
+      </div>
+    </div>
+  </div>
+   <font color="black">   <center>Powered by GrapeASE by Grapefruit - Design by Grapefruit</center><br />  <center>Implemented into RevCMS by Kryptos</center><br />

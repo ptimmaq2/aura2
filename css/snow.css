@@ -1,0 +1,358 @@
+body { font-family: "Ubuntu Condensed";
+font-size: 12pt;
+background-image: url("http://25.88.140.109/app/tpl/skins/aura/img/texture.png");
+background-color: #003A51;
+background-attachment: fixed;
+color: #CBE1E8;
+margin: 0;
+padding: 0;
+}
+
+a:link, a:visited { color: #CBE1E8;
+text-decoration: none;
+}
+
+a:hover { text-decoration: underline;
+}
+
+.bg2 { color: #007498;
+}
+
+.kohdistus { width: 960px;
+margin: 0 auto;
+}
+
+header { background-color: rgba(16, 16, 22, 0.85);
+border-bottom: 1px solid #7AA3B9;
+height: 98px;
+}
+
+#logo { background-image: url(http://25.88.140.109/app/tpl/skins/aura/images/logo.png);
+width: 120px;
+height: 40px;
+float: left;
+margin-left: 28px;
+margin-top: 28px;
+margin-bottom: 30px;
+}
+
+#menu { float: right;
+margin: 40px 18px;
+}
+
+#menu li { float: left;
+list-style: none;
+padding: 0 20px;
+border-right: 1px solid gray;
+color: #CBE1E8;
+}
+
+#menu li:hover { text-decoration: underline;
+}
+
+.icon_me { background-image: url(http://25.88.140.109/app/tpl/skins/aura/css/img/head.gif);
+background-position: -4px -6px;
+margin-right: 6px;
+width: 20px;
+height: 20px;
+float: left;
+}
+
+.icon_community { background-image: url(http://25.88.140.109/app/tpl/skins/aura/img/nav_icons.png);
+background-position: -20px -2px;
+margin-right: 6px;
+width: 20px;
+height: 20px;
+float: left;
+}
+
+.icon_safety { background-image: url(http://25.88.140.109/app/tpl/skins/aura/img/nav_icons.png);
+background-position: -40px -2px;
+margin-right: 6px;
+width: 20px;
+height: 20px;
+float: left;
+}
+
+.icon_credits { background-image: url(http://25.88.140.109/app/tpl/skins/aura/img/nav_icons.png);
+background-position: -60px -2px;
+margin-right: 6px;
+width: 20px;
+height: 20px;
+float: left;
+}
+
+#user_info { float: left;
+margin: 28px 0 0 35px;
+font-size: 10pt;
+line-height: 20px;
+}
+
+#user_info b { font-weight: normal;
+font-family: inherit;
+color: #fff;
+}
+
+#header_bar { background-color: rgba(16, 16, 22, 0.35);
+border-bottom: 1px solid #466778;
+}
+
+#submenu { float: right;
+margin: 0;
+}
+
+#submenu li { float: left;
+list-style: none;
+padding: 0 15px;
+color: #fff;
+color: #5198BE;
+}
+
+#submenu li:hover { text-decoration: underline;
+}
+
+.enter_button:hover { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.enter_button img { vertical-align: middle;
+margin-right: 15px;
+margin-top: -6px;
+}
+
+#top_bar_arrow { background-image: url(http://25.88.140.109/app/tpl/skins/aura/img/top_bar_arrow.out.png);
+width: 58px;
+height: 29px;
+}
+
+#top-bar-triangle{ font-size:0;height:0;line-height:0;border-style:solid;float:left;margin:0;border-color:#101016 transparent;border-color:rgba(16,16,22,0.85) transparent;border-width:29px 29px 0 29px}
+
+#top-bar-triangle-border{ background-image: url(http://25.88.140.109/app/tpl/skins/aura/img/top_bar_arrow.out.png);
+width: 58px;
+height: 29px;
+margin-top: -1px;
+}
+
+.content { font-size: 11.5pt;
+padding: 30px 30px 15px;
+overflow: auto;
+}
+
+.content_section { overflow: auto;
+padding-top: 5px;
+padding-bottom: 35px;
+}
+
+.content_section a:link, .content_section a:visited { color: #fff;
+}
+
+#my_info { background-color: rgba(42, 102, 121, 0.3);
+border: 2px solid #2E6E83;
+border-radius: 5px;
+font-size: 10.5pt;
+padding: 20px;
+height: 145px;
+margin-top: 3px;
+float: left;
+width: 295px;
+}
+
+#enter_hotel { background-color: rgba(42, 102, 121, 0.5);
+background-image: url(http://25.88.140.109/app/tpl/skins/aura/css/img/view_generic.png);
+background-position: -363px -540px;
+border: 2px solid rgba(255, 255, 255, 0.6);
+border-radius: 5px;
+padding: 20px;
+height: 145px;
+margin-top: 3px;
+float: left;
+width: 500px;
+margin-left: 15px;
+text-align: center;
+}
+
+h1, h2, h3, h4, h5 { border-bottom: 1px solid #466778;
+color: #fff;
+font-weight: normal;
+padding-bottom: 6px;
+margin: 0 0 25px;
+}
+
+h1 { font-size: 26pt;
+}
+
+h2 { font-size: 28px;
+}
+
+b { font-family: Ubuntu;
+font-weight: 500;
+color: #fff;
+}
+
+.mediumbutton { font-family: Ubuntu;
+float: left;
+padding: 3px;
+height: 37px;
+border-radius: 5px;
+text-align: center;
+margin: 0 2px 2px 0;
+text-decoration: none !important;
+}
+
+.mediumbutton_yellow { background-color: #C78800;
+border: 1px solid #5F4416;
+box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mediumbutton span { height: 19px;
+display: block;
+}
+
+.mediumbutton_yellow span { background-color: #F0BB00;
+}
+
+.mediumbutton b { color: #fff !important;
+text-decoration: none !important;
+font-size: 12pt;
+position: relative;
+z-index: 1;
+top: -9px;
+padding: 0 30px;
+}
+
+.smallbutton { font-family: Ubuntu;
+float: left;
+padding: 2px 1px;
+height: 24px;
+border-radius: 3px;
+text-align: center;
+margin: 0 1px 1px 0;
+text-decoration: none !important;
+}
+
+.smallbutton_yellow { background-color: #C78800;
+border: 1px solid #C78800;
+box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.smallbutton_blue { background-color: #437A86;
+border: 1px solid #437A86;
+box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.smallbutton span { height: 12px;
+position: relative;
+display: block;
+}
+
+.smallbutton_yellow span { background-color: #F0BB00;
+}
+
+.smallbutton_blue span { background-color: #4A9FB4;
+}
+
+.smallbutton b { color: #fff !important;
+text-decoration: none !important;
+font-size: 10.5pt;
+position: relative;
+z-index: 1;
+top: -10px;
+padding: 0 20px;
+font-weight: 500;
+line-height: 21px;
+}
+
+.mediumbutton_yellow b, .smallbutton_yellow b, .smallbutton_blue b { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.mediumbutton_yellow:hover, .smallbutton_yellow:hover { background-color: #d99b00;
+}
+
+.mediumbutton_yellow:hover span, .smallbutton_yellow:hover span { background-color: #f7ce00;
+}
+
+.mediumbutton_blue:hover, .smallbutton_blue:hover { background-color: #418491;
+}
+
+.mediumbutton_blue:hover span, .smallbutton_blue:hover span { background-color: #46A9BF;
+}
+
+.mediumbutton:active, .smallbutton:active { box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+margin: 1px 0 0 1px;
+}
+
+.slider { width: 730px;
+height: 300px;
+border-radius: 5px;
+margin: 0 auto;
+}
+                        
+.slide { width: 316px;
+height: 236px;
+}
+
+#mySwipe div p { display:block;
+padding: 0;
+margin: 0;
+height: 116px;
+width: 325px;
+}
+
+.top_story { background-position: center;
+width: 730px;
+height: 300px;
+}
+
+.top_story_content { width: 360px;
+height: 170px;
+padding: 30px;
+color: #fff;
+}
+
+.top_story_button { float: right;
+margin-top: 23px;
+margin-right: 20px;
+}
+
+.top_story h2 { border: none;
+padding-bottom: 0;
+margin-top: 26px;
+margin-bottom: 15px;
+}
+
+#news_archive { background-color: rgba(42, 102, 121, 0.3);
+border: 2px solid #2E6E83;
+border-radius: 5px;
+padding: 4px 17px 20px;
+}
+
+#news_archive h1 { font-size: 19pt;
+margin-top: 10px;
+margin-bottom: 0px;
+}
+
+#news_archive h2 { font-size: 13pt;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+#news_archive ul { padding: 0;
+margin: 0;
+}
+
+#news_archive li { list-style: none;
+padding: 0;
+margin: 0 0 4px 6px;
+}
+
+.footer-links { font-size: 9pt;
+color: #5198BE;
+padding: 4px 0;
+text-align: center;
+}
+
+.copyright { font-size: 9pt;
+color: #5198BE;
+text-align: center;
+width: 710px;
+margin: 0 auto;
+}

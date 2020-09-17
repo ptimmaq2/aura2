@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/global.css" type="text/css">
+ <div id="main">
+   <div id="links"></div>     <div id="header"><img src="{url}/app/tpl/skins/{skin}/images/logo.gif" align=left style="margin-left: 30px; margin-top: 5px;"><div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the color of the logo text -->
+         <h1>{hotelname} Housekeeping -- Welcome {username}</h1>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- insert your sidebar items here -->
+ 	<?php include "templates/sidebar.php"; ?> <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content_container">
+
+        <div id="content">
+          <!-- insert the page content here -->
+          <br />          <?php
+include_once('databaseconfig.php');
+{ 
+$User_id = mysql_real_escape_string($_POST['user_id']);
+$Badge_id = mysql_real_escape_string($_POST['badge_id']);
+$Slot_id = mysql_real_escape_string($_POST['badge_slot']);
+
+mysql_query("DELETE FROM user_badges WHERE user_id='$User_id' AND badge_id='$Badge_id'") or die(mysql_error());
+echo ("Badge has been deleted!"); 
+}
+
+
+
+?>
+<html>
+<body>
+<h1>Okay. If you see 'Badge has been deleted!' at the top, then it has completed successfully.</h1>
+
+
+ </div>
+
+      </div>
+    </div>
+  </div>
+   <font color="black">   <center>Powered by GrapeASE by Grapefruit - Design by Grapefruit</center><br />  <center>Implemented into RevCMS by Kryptos</center><br />
+

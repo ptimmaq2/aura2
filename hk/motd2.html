@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/global.css" type="text/css">
+ <div id="main">
+   <div id="links"></div>     <div id="header"><img src="{url}/app/tpl/skins/{skin}/images/logo.gif" align=left style="margin-left: 30px; margin-top: 5px;"><div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the color of the logo text -->
+         <h1>{hotelname} Housekeeping -- Welcome {username}</h1>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- insert your sidebar items here -->
+ 	<?php include "templates/sidebar.php"; ?> <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content_container">
+
+        <div id="content">
+          <!-- insert the page content here -->
+<?php
+include_once('databaseconfig.php');
+{
+$message = mysql_real_escape_string($_POST['motd']);
+
+mysql_query("UPDATE server_settings SET motd = '$message'");
+echo ("Welcome message updated successfully.");
+}
+		  ?>
+		  
+		  
+		  <h1>If you see "Welcome message updated successfully." at the top, then it has all gone great! Remember to do :update_settings on the client to make it live!</h1>
+		  
+		   </div>
+
+      </div>
+    </div>
+  </div>
+   <font color="black">   <center>Powered by GrapeASE by Grapefruit - Design by Grapefruit</center><br />  <center>Implemented into RevCMS by Kryptos</center><br />

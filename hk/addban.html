@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/global.css" type="text/css">
+ <div id="main">
+   <div id="links"></div>     <div id="header"><img src="{url}/app/tpl/skins/{skin}/images/logo.gif" align=left style="margin-left: 30px; margin-top: 5px;"><div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the color of the logo text -->
+         <h1>{hotelname} Housekeeping -- Welcome {username}</h1>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- insert your sidebar items here -->
+ 	<?php include "templates/sidebar.php"; ?> <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content_container">
+
+        <div id="content">
+          <!-- insert the page content here -->
+          <br />          
+<form method="post" action="index.php?url=addban2">
+Ban ID (Make sure it has not been used!!!)<br />
+	<input type="text" name="ban_id"/> <br /> <br />
+	Username:<br />
+	<input type="text" name="username"/> <br /> <br />
+	Ban Type (Either 'user' or 'ip'):<br />
+	<input type="text" name="type"/> <br /> <br />
+	Reason:<br />
+	<input type="text" name="reason"/> <br /> <br />
+	
+	<strong>NOTE: For the next step, please go to http://www.onlineconversion.com/unix_time.htm and use the 'Convert a Date/Time to a Unix timestamp'
+	for when you want the ban to expire, and simply type in the numbers it gives you below:<br /><br /></strong>
+	
+	Expire:
+	<input type="text" name="expire"/><br /><br />
+	
+	<input type="submit" value="Ban user" name="ban2" />
+	</form>
+	<?php
+	
+
+?>
+ </div>
+
+      </div>
+    </div>
+  </div>
+   <font color="black">   <center>Powered by GrapeASE by Grapefruit - Design by Grapefruit</center><br />  <center>Implemented into RevCMS by Kryptos</center><br />

@@ -1,0 +1,275 @@
+/* © Jasler.nl
+ * © Iplace CMS
+ */
+body {
+    font-size: 11px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    text-align: center;
+    background: url('../images/background.png') repeat;
+    overflow-y: scroll;
+}
+
+a {
+    color: #000000;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+@keyframes back-link-animation{0%{left:30px}100%{left:-59px}}@-webkit-keyframes back-link-animation{0%{left:30px}
+100%{left:-59px}}
+
+#container {
+    width: 460px;
+    position: relative;
+    clear: both;
+    z-index: 999;
+}
+
+#container, #header, #navi2-container {
+    text-align: left;
+}
+
+#container, #header, #navi2-container {
+    margin: 0 auto;
+    text-align: left;
+    width: 930px;
+    z-index: 8999;
+    width: 460px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.settings-container {
+    background: transparent url(../images/identity/manage_account_bg.png) no-repeat top left;
+    width: 460px;
+}
+
+.settings-container-bottom {
+    background: transparent url(../images/identity/manage_account_bg.png) no-repeat bottom left;
+    height: 10px;
+}
+
+.settings-container h1 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 42px;
+    margin-bottom: 0;
+}
+
+.settings-container #back-link {
+    position: relative;
+}
+
+.js a.new-button {
+    display: block;
+}
+
+.new-button {
+    margin: 0 0 5px 10px;
+    display: block;
+    float: right;
+    height: 25px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+    background: none;
+}
+
+.new-button b {
+    float: left;
+    padding: 5px 17px 4px 20px;
+    font-size: 11px;
+    height: 17px;
+    margin-right: 3px;
+    background: transparent url(../images/identity/new_button.png) no-repeat -3px 0;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+}
+
+.new-button i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 25px;
+    background: transparent url(../images/identity/new_button.png) no-repeat 0 0;
+}
+
+#back-link {
+    color: #000000  !important;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 41px;
+    line-height: 41px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#back-to-main {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    left: -59px;
+    padding: 4px 8px 4px 6px;
+    position: absolute;
+    z-index: -1;
+    cursor: pointer;
+    animation: back-link-animation .5s;
+    -webkit-animation: back-link-animation .5s;
+}
+
+.settings-auth .last-access-time {
+    color: #999999;
+    font-size: 10px;
+}
+
+.opt-password {
+    background-color: #f3f3f3;
+    padding: 8px 8px 3px 8px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.footer span {
+    color: #777777;
+}
+
+#safety-questions-form select {
+    display: block;
+    width: 310px;
+    border: 1px solid #c6c6c6;
+}
+
+select {
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #eaeaea;
+    width: 88px;
+}
+
+input, textarea, select {
+    font-size: 11px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+input, textarea, keygen, select, button, isindex {
+    margin: 0em;
+    font: -webkit-small-control;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+
+input, textarea, keygen, select, button, isindex, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+.field {
+    clear: left;
+    margin: 10px 0 17px 0;
+}
+
+p.gray {
+    color: #777777;
+}
+
+.cancel-link {
+    float: right;
+    line-height: 24px;
+}
+
+a {
+    color: #fc6204;
+}
+
+a {
+    color: #fc6204;
+}
+
+.form-box {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e2eff9;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+p.help {
+    margin-top: 4px;
+    color: #a0a0a0;
+}
+
+/* avatar selection */
+#selected-avatar {
+    background: transparent url(../images/identity/reg_stand.png) no-repeat bottom left;
+    height: 157px;
+    width: 106px;
+    float: left;
+    margin-top: 42px;
+    position: relative;
+}
+
+#avatar-field-container h3 {
+    clear: left;
+    font-size: 11px;
+}
+
+#selected-avatar img {
+    position: absolute;
+    bottom: 36px;
+    left: 22px;
+}
+
+#avatar-choices {
+    float: left;
+    margin-left: 20px;
+    width: 193px;
+}
+
+.male-avatar, .female-avatar {
+    display: block;
+    float: left;
+    background: transparent url(../images/identity/reg_btn_0.png) no-repeat 0 0;
+    height: 61px;
+    width: 35px;
+    margin: 0 3px 10px 0;
+}
+
+.male-avatar:hover, .female-avatar:hover {
+    background-image: url(../images/identity/reg_btn_1.png);
+}

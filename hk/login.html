@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/global.css" type="text/css"/>
+<link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="{url}/app/tpl/skins/{skin}/hk/styles/bootstrap.css" type="text/css"/>
+<?php 
+if (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) { $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_CF_CONNECTING_IP']; }
+
+if (!isset($_SESSION['user']['id']) || $_SESSION['user']['rank'] < 5) 
+{ 
+	header("Location: ../index");
+	die(); 
+} 
+?>
+
+<div id="main">
+	<div class="header" id="login"></div>
+	<div id="content" class="login">
+		<h1>{hotelName} ASE</h1><hr/>
+		Welcome to the {hotelName} Hotel All Seeing Eye. Your IP has been logged (<?php echo $_SERVER["REMOTE_ADDR"]; ?>)
+		Please note if you are not an officially ranked staff member at {hotelName} Hotel, you could get into trouble for being here..
+
+		<?php if (isset($template->form->error)) { echo '<br/><br/><div class="alert alert-error" align="center">'.$template->form->error.'</div>'; } ?>
+
+		<hr/>
+		<form method="post" action="index.php?url=login">
+			<table class="table table-bordered table-condensed">
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="username" /></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Log into ASE" name="login" /></td>
+				</tr>
+			</table>
+		</form>
+		<hr/>
+		<center>Powered by RevCMS, by Kryptos.</center>
+		<center>Massive ASE recode, by Sledmore.</center><br />
+	</div>
+</div>
