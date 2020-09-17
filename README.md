@@ -16,3 +16,8 @@ Can be used for whatever, keep my name somewhere as credits, ty.
 
 Feel free to ask things.
 
+
+
+
+if some old private info is found I ask you to delete it before publishing somewhere.
+recommend to cut down on excess files this project has a lot of old copies of pages and images in it.
